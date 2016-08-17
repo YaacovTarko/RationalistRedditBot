@@ -7,13 +7,9 @@ import datetime       #https://docs.python.org/3/library/datetime.html#timedelta
 import time           #flor sleep function
 from config_bot import *  #imports username and password 
 
-class submission:
-	def __init__(self, link, title):
-		self.link = link
-		self.title = title
 
 #praw - manages reddit API use to make sure I follow the TOS 
-agent_name = ("Rational_Blog_Autosubmitter 0.1")
+agent_name = ("Rationality_Blog_Autosubmitter 0.1")
 reddit_instance = praw.Reddit(user_agent = agent_name)
 
 reddit_instance.login(REDDIT_USERNAME, REDDIT_PASSWORD)
