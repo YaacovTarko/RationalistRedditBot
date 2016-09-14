@@ -48,7 +48,7 @@ while True:
 			#time formatting
 			#Converts to type datetime.datetime 
 			parsed_date = parse(date)
-			#print parsed_date 
+
 			parsed_date_unaware = parsed_date.replace(tzinfo=None)  #strips time zone info to allow arithmetic operations with 'now'
 
 
